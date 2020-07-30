@@ -4,7 +4,7 @@
     api 'androidx.recyclerview:recyclerview:1.0.0'
     api 'androidx.cardview:cardview:1.0.0'
     api 'com.google.android.material:material:1.0.0'
-   api 'androidx.appcompat:appcompat:1.0.2'
+    api 'androidx.appcompat:appcompat:1.0.2'
 
 ### 依赖方式二：直接依赖组件
-    #### api project(path: ':album')
+    api project(path: ':album')

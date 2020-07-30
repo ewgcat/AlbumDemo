@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="White">#FFF</color>
+    <color name="WhiteGray">#E0E0E0</color>
+    <color name="Transparent">#00000000</color>
+
+    <color name="FontHint">#808080</color>
+    <color name="FontLight">#FFF</color>
+    <color name="FontDark">#333</color>
+
+    <color name="IconDark">#333</color>
+
+    <color name="ColorPrimary">#60000000</color>
+    <color name="ColorPrimaryDark">#60000000</color>
+    <color name="ColorPrimaryBlack">#FF2B2B2B</color>
+    <color name="SheetBackground">#CC2B2B2B</color>
+
+    <color name="ItemLayer">#CC2B2B2B</color>
+    <color name="durban_ColorPrimary">#2196F3</color>
+    <color name="durban_ColorPrimaryDark">#1E88E5</color>
+    <color name="durban_ColorPrimaryBlack">#FF2B2B2B</color>
+
+    <color name="durban_White">#FFFFFFFF</color>
+
+    <color name="durban_ControllerBackground">@color/durban_ColorPrimaryBlack</color>
+
+    <color name="durban_CropLogo">#99FFFFFF</color>
+    <color name="durban_CropBackground">@color/durban_ColorPrimaryBlack</color>
+    <color name="durban_CropDimmed">#8C000000</color>
+    <color name="durban_CropGridLine">#80FFFFFF</color>
+    <color name="durban_CropFrameLine">#FFFFFFFF</color>
+
+</resources>

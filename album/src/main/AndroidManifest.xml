@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lishuaihua.album">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <application>
+        <activity
+            android:name="com.lishuaihua.durban.DurbanActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AlbumTheme"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"/>
+        <activity
+            android:name="com.lishuaihua.album.ui.AlbumActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AlbumTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|stateHidden"/>
+
+        <activity
+            android:name="com.lishuaihua.album.ui.GalleryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AlbumTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|stateHidden"/>
+
+        <activity
+            android:name="com.lishuaihua.album.ui.GalleryAlbumActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AlbumTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|stateHidden"/>
+
+        <activity
+            android:name="com.lishuaihua.album.ui.CameraActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/TransparentActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|stateHidden"/>
+
+        <provider
+            android:name="com.lishuaihua.album.provider.CameraFileProvider"
+            android:authorities="${applicationId}.album.camera.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            android:multiprocess="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/camera_provider"/>
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchParent"
+    android:foreground="?selectableItemBackground"
+    app:cardBackgroundColor="@color/ColorPrimaryBlack"
+    app:cardCornerRadius="@dimen/dp_2"
+    app:cardElevation="@dimen/dp_2"
+    app:cardPreventCornerOverlap="false">
+
+
+    <ImageView
+        style="@style/MatchParent"
+        android:background="?selectableItemBackground"
+        android:contentDescription="@string/title"
+        android:scaleType="center"
+        app:srcCompat="@drawable/ic_add_photo_white"/>
+
+</androidx.cardview.widget.CardView>

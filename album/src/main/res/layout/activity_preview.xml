@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchParent"
+    android:background="@color/ColorPrimaryBlack">
+
+    <com.lishuaihua.album.widget.photoview.FixViewPager
+        android:id="@+id/view_pager"
+        style="@style/MatchParent"/>
+
+    <LinearLayout
+        style="@style/WrapContent.WidthMatchParent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <com.lishuaihua.statusview.StatusView
+            style="@style/WrapContent.WidthMatchParent"
+            android:background="@color/Transparent"/>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Toolbar"
+            android:background="@color/Transparent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/WrapContent.WidthMatchParent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/bottom_root"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <TextView
+                android:id="@+id/tv_duration"
+                style="@style/WrapContent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:layout_marginStart="@dimen/dp_6"
+                android:drawableLeft="@drawable/tag_video_white"
+                android:drawablePadding="@dimen/dp_4"
+                android:drawableStart="@drawable/tag_video_white"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/FontLight"
+                android:visibility="gone"/>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cb_check"
+                style="@style/CheckBox.WrapContent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:text="@string/check"
+                android:textColor="@color/FontLight"
+                android:textSize="@dimen/sp_16"/>
+
+        </RelativeLayout>
+
+        <com.lishuaihua.statusview.NavigationView
+            android:id="@+id/navigation_view"
+            style="@style/WrapContent.WidthMatchParent"/>
+    </LinearLayout>
+
+</RelativeLayout>

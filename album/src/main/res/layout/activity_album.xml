@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchParent">
+
+    <com.lishuaihua.statusview.NavigationView
+        android:id="@+id/navigation_view"
+        style="@style/WrapContent.WidthMatchParent"
+        android:layout_alignParentBottom="true"/>
+
+    <FrameLayout
+        android:id="@+id/root_frame_layout"
+        style="@style/MatchParent"
+        android:layout_above="@id/navigation_view"
+        android:background="@color/White"/>
+</RelativeLayout>

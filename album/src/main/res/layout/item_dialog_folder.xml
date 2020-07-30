@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WrapContent.WidthMatchParent"
+    android:background="?selectableItemBackground"
+    android:padding="@dimen/dp_10">
+
+    <ImageView
+        android:id="@+id/iv_gallery_preview_image"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/title"
+        android:scaleType="centerCrop"/>
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/rb_gallery_preview_check"
+        style="@style/WrapContent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="false"/>
+
+    <TextView
+        android:id="@+id/tv_gallery_preview_title"
+        style="@style/WrapContent.WidthMatchParent"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_toEndOf="@id/iv_gallery_preview_image"
+        android:layout_toLeftOf="@id/rb_gallery_preview_check"
+        android:layout_toRightOf="@id/iv_gallery_preview_image"
+        android:layout_toStartOf="@id/rb_gallery_preview_check"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+
+</RelativeLayout>

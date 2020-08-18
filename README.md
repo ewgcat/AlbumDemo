@@ -1,6 +1,6 @@
 # 拍照或选择图片裁剪为正方形
 
-### 依赖方式一：直接按demo中依赖aar就好，同时要依赖
+### 依赖方式一：
 
 allprojects {
     repositories {

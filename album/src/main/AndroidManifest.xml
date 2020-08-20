@@ -8,7 +8,8 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
 
-    <application>
+    <application
+        android:requestLegacyExternalStorage="true">
         <activity
             android:name="com.lishuaihua.durban.DurbanActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"

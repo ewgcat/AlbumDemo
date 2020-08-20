@@ -7,7 +7,7 @@ allprojects {
         google()
         jcenter()
         mavenCentral(
-                url: "https://ewgcat.bintray.com/album/"
+                url: "https://ewgcat.bintray.com/utils/"
         )
     }
 }

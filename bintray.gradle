@@ -78,7 +78,7 @@ bintray {
     configurations = ['archives']
     pkg {
         userOrg="ewgcat"
-        repo = 'album'
+        repo = 'utils'
         name = "album"
         websiteUrl = siteUrl
         licenses = ['Apache-2.0']

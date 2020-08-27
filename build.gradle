@@ -25,6 +25,7 @@ allprojects {
         mavenCentral(
                 url: "https://ewgcat.bintray.com/album/"
         )
+        maven { url 'https://jitpack.io' }
     }
 }
 

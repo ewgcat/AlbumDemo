@@ -12,6 +12,7 @@ import android.view.View;
 import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.view.SupportMenuInflater;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
@@ -49,7 +50,7 @@ public class NoFragment extends Fragment {
      * @param bundle        argument.
      * @param <T>           subclass of {@link NoFragment}.
      * @return new instance.
-     * @deprecated In {@code Activity} with {@link CompatActivity#fragment(Class, Bundle)} instead;
+     * @deprecated In {@code AppCompatActivity} with {@link CompatActivity#fragment(Class, Bundle)} instead;
      * in the {@code Fragment} width {@link #fragment(Class, Bundle)} instead.
      */
     @Deprecated
@@ -106,9 +107,9 @@ public class NoFragment extends Fragment {
      * Start activity.
      *
      * @param clazz class for activity.
-     * @param <T>   {@link Activity}.
+     * @param <T>   {@link AppCompatActivity}.
      */
-    protected final <T extends Activity> void startActivity(Class<T> clazz) {
+    protected final <T extends AppCompatActivity> void startActivity(Class<T> clazz) {
         startActivity(new Intent(mActivity, clazz));
     }
 
@@ -116,9 +117,9 @@ public class NoFragment extends Fragment {
      * Start activity and finish my parent.
      *
      * @param clazz class for activity.
-     * @param <T>   {@link Activity}.
+     * @param <T>   {@link AppCompatActivity}.
      */
-    protected final <T extends Activity> void startActivityFinish(Class<T> clazz) {
+    protected final <T extends AppCompatActivity> void startActivityFinish(Class<T> clazz) {
         startActivity(new Intent(mActivity, clazz));
         mActivity.finish();
     }
